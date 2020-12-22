@@ -1,0 +1,26 @@
+.badge-notification {
+  position: absolute;
+  font-size: .6rem;
+  margin-top: -.7rem;
+  margin-left: -.8rem;
+  padding: .2em .45em;
+}
+
+.bg-danger {
+  background-color: #f93154;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.badge {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}

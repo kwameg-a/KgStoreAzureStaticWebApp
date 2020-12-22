@@ -7,14 +7,9 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
-  itemsCount!: number;
 
-  constructor(private cartService: CartService) { }
+  constructor(public cartService: CartService) { }
 
   ngOnInit(): void {
-
-    setInterval(() => {
-      this.itemsCount = this.cartService.getItems().length;
-    }, 0);
   }
 }

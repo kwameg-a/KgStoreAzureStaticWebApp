@@ -3,5 +3,6 @@
 </a>
 
 <a routerLink="/cart" class="button fancy-button">
-  <sup>{{ itemsCount }}</sup> <i class="material-icons">shopping_cart</i> Checkout
+  <span class="badge rounded-pill badge-notification bg-danger">{{ cartService.getItems().length }}</span>
+  <i class="material-icons">shopping_cart</i> Checkout
 </a>
