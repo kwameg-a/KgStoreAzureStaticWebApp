@@ -7,18 +7,18 @@ import { IProduct, products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  products: IProduct[] = products
+  products: IProduct[] = products;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  share() {
+  share(): void {
     window.alert('The product has been shared!');
   }
 
-  onNotify() {
+  onNotify(): void {
     window.alert('You will be notified when the product goes on sale');
   }
 }

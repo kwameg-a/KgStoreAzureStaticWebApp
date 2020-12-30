@@ -18,16 +18,14 @@ export class ProductDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
     const productIdFromRoute = this.route.snapshot.paramMap.get('productId');
     this.product = products.find((p: IProduct) => p.id === Number(productIdFromRoute));
   }
 
-  addToCart(product: IProduct) {    
-    if (window.confirm("Add item to the cart?")) {
+  addToCart(product: IProduct): void {
+    if (window.confirm('Add item to the cart?')) {
       this.cartService.addToCart(product);
-      console.log(this.cartService.getItems());
       this.router.navigate(['']);
-    }  
+    }
   }
 }

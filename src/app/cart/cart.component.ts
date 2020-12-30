@@ -26,7 +26,7 @@ export class CartComponent implements OnInit {
     this.setItems();
   }
 
-  onCheckoutFormSubmit(customerData: any) {
+  onCheckoutFormSubmit(customerData: any): void {
     this.cartService.clearCart();
     this.checkoutForm.reset();
 
@@ -41,7 +41,7 @@ export class CartComponent implements OnInit {
     }
   }
 
-  private setItems() {
+  private setItems(): void {
     this.items = this.cartService.getItems();
   }
 }

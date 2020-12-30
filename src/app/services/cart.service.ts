@@ -14,7 +14,7 @@ export class CartService {
   ) { }
 
   addToCart(product: IProduct): void {
-    this.items.push(product)
+    this.items.push(product);
   }
 
   getItems(): IProduct[] {
