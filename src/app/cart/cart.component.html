@@ -14,7 +14,8 @@
     <span><button (click)="removeItem(item)">Remove</button></span>
   </div>
 
-  <form [formGroup]="checkoutForm" (ngSubmit)="onCheckoutFormSubmit(checkoutForm.value)">
+  <form [formGroup]="checkoutForm"
+        (ngSubmit)="onCheckoutFormSubmit(checkoutForm.value)">
     <div>
       <label for="name">
         Name:
